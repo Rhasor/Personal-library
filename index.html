@@ -9,192 +9,53 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            <div class="logo">
-                <img src="logo/ruler-square-compass.svg" height="45px">
-                <div>Dashboard</div>
-            </div>
-            <div class="first-sidebar">
-                <div class="home">
-                    <img src="logo/home.svg" height="30px">
-                    <p>Home</p>
-                </div>
-                <div class="profile">
-                    <img src="logo/card-account-details-outline.svg" height="30px">
-                    <p>Profile</p>
-                </div>
-                <div class="messages">
-                    <img src="logo/message-reply-outline.svg" height="30px">
-                    <p>Messages</p>
-                </div>
-                <div class="history">
-                    <img src="logo/clock-time-four-outline.svg" height="30px">
-                    <p>History</p>
-                </div>
-                <div class="task">
-                    <img src="logo/note-multiple-outline.svg" height="30px">
-                    <p>Task</p>
-                </div>
-                <div class="communities">
-                    <img src="logo/account-group.svg" height="30px">
-                    <p>Communities</p>
-                </div>   
-            </div>
-            
-            <div class="second-sidebar">
-                <div class="settings">
-                    <img src="logo/cog.svg" height="30px">
-                    <p>Settings</p>
-                </div>
-                <div class="support">
-                    <img src="logo/face-agent.svg" height="30px">
-                    <p>Support</p>
-                </div>
-                <div class="privacy">
-                    <img src="logo/shield-account-outline.svg" height="30px">
-                    <p>Privacy</p>
-                </div>
-            </div>
+            <div>Library</div>
         </div> 
-
-        <div class="header1">
-            <div class="barra">
-                <img src="logo/magnify.svg" height="30px">
-                <input type="text">
-            </div>
-            <div class="header1-logo">
-                <img src="logo/bell-ring-outline.svg" height="20px">
-                <img src="logo-users/icons8-futurama-fry.svg" height="40px">
-                <p class="title-header1">Benerick Rivera</p>
-            </div>
-        </div>
 
         <div class="header2">
             <div class="header2-logo">
                 <img src="logo-users/icons8-futurama-fry.svg" height="75px">
                 <div class="user-header2">
-                    <div class="title-header2">Hi there,</div>
+                    <div class="title-header2">Welcome to your Library</div>
                     <div class="subtitle-header2">Benerick Rivera (@rhasor)</div>
                 </div>
-            </div>
-
-            <div class="header-button">
-                <button id="btn" class="new">New</button>
-                <button id="btn" class="upload">Upload</button>
-                <button id="btn" class="share">Share</button>
             </div>
         </div>
 
         <div class="header3">
-            <div class="projects">
-                <div class="subtitle">Your Projects</div>
-                <div class="title-header3">
-                    <div class="first-project" id="pro">
-                        <div class="project-title">Super Cool Project</div>
-                        <div>Lorem ipsum dolor sit amet, et doloredolor sit amet, et dolo magna aliqua. Ut enim ad minim veniam, quis nostrud.Ut enim ad minim veniam, quis nostrud</div>
-                        <div class="project-logo">
-                            <img src="logo/star-plus-outline.svg">
-                            <img src="logo/eye-plus-outline.svg">
-                            <img src="logo/share-variant-outline.svg">
-                        </div>
-                    </div>
-                    <div class="second-project" id="pro">
-                        <div class="project-title">Less Cool Project</div>
-                        <div>Lorem ipsum dolor sit amet, et doloredolor sit amet, et dolo magna aliqua. Ut enim ad minim veniam, quis nostrud.et doloredolor sit amet, et dolo magna aliqua.Ut enim ad minim veniam.</div>
-                        <div class="project-logo">
-                            <img src="logo/star-plus-outline.svg">
-                            <img src="logo/eye-plus-outline.svg">
-                            <img src="logo/share-variant-outline.svg">
-                        </div>
-                    </div>
-                    <div class="third-project" id="pro">
-                        <div class="project-title">Impossible App</div>
-                        <div>Lorem ipsum dolor sit amet, et doloredolor sit amet, et dolo magna aliqua. Ut enim ad minim veniam, quis nostrud...</div>
-                        <div class="project-logo">
-                            <img src="logo/star-plus-outline.svg">
-                            <img src="logo/eye-plus-outline.svg">
-                            <img src="logo/share-variant-outline.svg">
-                        </div>
-                    </div>
-                    <div class="fourth-project" id="pro">
-                        <div class="project-title">Easy Peasy App</div>
-                        <div>Lorem ipsum dolor sit amet, et doloredolor sit amet, et dolo magna aliqua. Ut enim ad minim veniam, quis nostrud. et doloredolor sit amet, et dolo magna aliqua.</div>
-                        <div class="project-logo">
-                            <img src="logo/star-plus-outline.svg">
-                            <img src="logo/eye-plus-outline.svg">
-                            <img src="logo/share-variant-outline.svg">
-                        </div>
-                    </div>
-                    <div class="fifth-project" id="pro">
-                        <div class="project-title">Ad Blocker</div>
-                        <div>Lorem ipsum dolor sit amet, et doloredolor sit amet, et dolo magna aliqua. Ut enim ad minim veniam, quis nostrud...</div>
-                        <div class="project-logo">
-                            <img src="logo/star-plus-outline.svg">
-                            <img src="logo/eye-plus-outline.svg">
-                            <img src="logo/share-variant-outline.svg">
-                        </div>
-                    </div>
-                    <div class="sixth-project" id="pro">
-                        <div class="project-title">Money Maker</div>
-                        <div>Lorem ipsum dolor sit amet, et doloredolor sit amet, et dolo magna aliqua. Ut enim ad minim veniam, quis nostrud.et doloredolor sit amet, et dolo magna aliqua.</div>
-                        <div class="project-logo">
-                            <img src="logo/star-plus-outline.svg">
-                            <img src="logo/eye-plus-outline.svg">
-                            <img src="logo/share-variant-outline.svg">
-                        </div>
-                    </div>
+            <div class="projects" id="content">
+                <div class="subtitle">Your Books</div>
+                <div id="book-grid">
                 </div>   
             </div>
 
             <div class="announcements">
-                <div class="subtitle">Announcements</div>
+                <div class="subtitle">Edition</div>
                 <div class="announ-list">
                     <div class="first-list" id="pro-list">
-                        <div class="announ-title">Site Maintenance</div>
-                        <div>Lorem ipsum dolor sit amet, et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</div>
+                        <div class="announ-title">Create New Book</div>
+                        <div>You can add information about a new book whenever you like, and the details can be as thorough as you wish.</div>
                     </div>
-                    <div class="second-list" id="pro-list">
-                        <div class="announ-title">Community Share Day</div>
-                        <div>Lorem ipsum dolor sit amet, et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</div>
+                    <div class="header-button">
+                        <button id="open-add-dialog-button">New Book</button>
                     </div>
-                    <div class="third-list" id="pro-list">
-                        <div class="announ-title">Updated Privacy Policy</div>
-                        <div>Lorem ipsum dolor sit amet, et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</div>
-                    </div>
-                </div>
+                    <dialog id="add-book-dialog">
+                        <div id="dialog-contents">
+                            <form id="book-form">
+                                <h2>Add New Book</h2>
+                                <input type="text" name="book-title" placeholder="Title" required>
+                                <input type="text" name="book-author" placeholder="Author" required>
+                                <input type="number" name="book-pages" placeholder="Pages" required max="100000" min="1">
+                                <div class="read">
+                                    <label for="book-read">Read?</label>
+                                    <input type="checkbox" name="book-read">
+                                </div>
+                                <button id="add-book-button">Add</button>
+                                <i id="close-dialog-button" class="material-icons">cancel</i>
+                            </form>
+                        </div>
+                    </dialog>
 
-            </div>
-
-            <div class="trending">
-                <div class="subtitle">Trending</div>
-                <div class="users-list">
-                    <div class="first-user" id="pro-user">
-                        <img src="logo-users/icons8-grinch.svg" height="60px">
-                        <div>
-                            <div>@tegan</div>
-                            <div>World Peace Builder</div>
-                        </div>
-                    </div>
-                    <div class="second-user" id="pro-user">
-                        <img src="logo-users/icons8-harley-quinn-dc.svg">
-                        <div>
-                            <div>@morgan</div>
-                            <div>Super Cool Project</div>
-                        </div>
-                    </div>
-                    <div class="third-user" id="pro-user">
-                        <img src="logo-users/icons8-sonic-the-hedgehog.svg">
-                        <div>
-                            <div>@kendal</div>
-                            <div>Life Changing App</div>
-                        </div>
-                    </div>
-                    <div class="fourth-user" id="pro-user">
-                        <img src="logo-users/icons8-scooby-doo.svg">
-                        <div>
-                            <div>@alex</div>
-                            <div>No Traffic Maker</div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
