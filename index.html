@@ -25,8 +25,31 @@
         <div class="header3">
             <div class="projects" id="content">
                 <div class="subtitle">Your Books</div>
-                <div id="book-grid">
-                </div>   
+                <div id="book-grid"></div>
+                
+                <dialog id="add-book-dialog">
+                    <div id="dialog-contents">
+                        <form id="book-form">
+                            <div class="closeCard">
+                                <h2>Add New Book</h2>
+                                <i id="close-dialog-button"><strong>X</strong></i>
+                            </div>
+                            <input type="text" name="book-title" placeholder="Title" required>
+                            <input type="text" name="book-author" placeholder="Author" required>
+                            <input type="number" name="book-pages" placeholder="Pages" required max="10000" min="1">
+                            <input type="text" name="book-comments" placeholder="Comments">
+                            <div class="read">
+                                <div class="readPosition">
+                                    <label>Read?</label>
+                                    <input type="checkbox" name="book-read">
+                                </div>
+                                <div class="addButtonPosition">
+                                    <button id="add-book-button">Add</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </dialog>
             </div>
 
             <div class="announcements">
@@ -39,23 +62,6 @@
                     <div class="header-button">
                         <button id="open-add-dialog-button">New Book</button>
                     </div>
-                    <dialog id="add-book-dialog">
-                        <div id="dialog-contents">
-                            <form id="book-form">
-                                <h2>Add New Book</h2>
-                                <input type="text" name="book-title" placeholder="Title" required>
-                                <input type="text" name="book-author" placeholder="Author" required>
-                                <input type="number" name="book-pages" placeholder="Pages" required max="100000" min="1">
-                                <div class="read">
-                                    <label for="book-read">Read?</label>
-                                    <input type="checkbox" name="book-read">
-                                </div>
-                                <button id="add-book-button">Add</button>
-                                <i id="close-dialog-button" class="material-icons">cancel</i>
-                            </form>
-                        </div>
-                    </dialog>
-
                 </div>
             </div>
         </div>

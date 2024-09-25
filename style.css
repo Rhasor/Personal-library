@@ -3,9 +3,7 @@
     background-image: url("fondo/library_3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    
   }
-
 .title-header2 {
     font-size: 15px;
     font-weight: bold;
@@ -14,8 +12,6 @@
         font-size: 22px;
         font-weight: bold;
     }
-
-
 .header3 {
     background-color: #e2e8f0;
     box-shadow: 0 3px 5px  rgb(196, 196, 196) inset;
@@ -34,7 +30,6 @@
             font-weight: bold;
             font-size: 16px;
         }
-
     #open-add-dialog-button {
         background-color: #1992d4;
         color: #fff;
@@ -49,26 +44,20 @@
         #open-add-dialog-button:hover {
             background-color: #3e8e41;
         }
-
-  /*-------- Grid set -------*/
-
+/*---------------------------------*/
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
 }
-/*---------------------------------*/
 .sidebar {
     grid-column: 1/2;
     grid-row: 1/4;
-
     display: flex;
     justify-content: center;
     font-size: 25px;
     font-weight: bold;
     padding: 20px 5px;
 }
-
-/*---------------------------------*/
 .header2 {
     display: grid;
     grid-template-columns: 3fr 2fr;
@@ -84,9 +73,6 @@
             display: flex;
             flex-direction: column;
         }
-
-/*---------------------------------*/
-
 .header3 {
     display: grid;
     grid-template-columns: 5fr 2fr;
@@ -106,7 +92,6 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 12px;
     }
-
     .book-card {
         display: flex;
         flex-direction: column;
@@ -124,106 +109,110 @@
         .pages {
             font-style: italic;
         }
-    .remove-button {
-        margin-bottom: 10px;
-    }
+        .delete {
+            font-weight: bold;
+            color: gray;
+        }
+        .title, .author, .pages, .comments {
+            margin-bottom: 10px;
+            text-align: center;
+            word-wrap: break-word;
+        }
     .book-card button {
         border: none;
         border-radius: 10px;
         width: calc(100% - 100px);
-        height: 50px;
+        height: 20px;
     }
-    .book-card i {
-        align-self: flex-end;
-        padding-right: 20px;
-        padding-bottom: 10px;
-        color: #273e4b;
-    }
-    .book-card i:hover {
-        opacity: 0,50;
-        cursor: pointer;
-    }
-
-    button[read="false"] {
-        background-color: rgba(254, 109, 109, 0.8);
-        width: 100px;
-        height: 30px;
-    }
-        button[read="false"]:hover {
-            background-color: rgba(254, 109, 109, 1);
+        .book-card i {
+            align-self: flex-end;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            color: #273e4b;
         }
-
-    button[read="true"], #add-book-button {
+            .book-card i:hover {
+                opacity: 0,50;
+                cursor: pointer;
+            }
+        button[read="false"] {
+            background-color: rgba(254, 109, 109, 0.8);
+            width: 100px;
+            height: 30px;
+        }
+            button[read="false"]:hover {
+                background-color: rgba(254, 109, 109, 1);
+            }
+        button[read="true"]{
+            background-color: rgba(115, 247, 115, 0.80);
+            width: 100px;
+            height: 30px;
+        }
+            button[read="true"]:hover {
+                background-color: rgba(115, 247, 115, 1);
+            }
+    #add-book-button {
         background-color: rgba(115, 247, 115, 0.80);
-        width: 100px;
-        height: 30px;
+        border-radius: 10px;
+        border: none;
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
     }
-        button[read="true"]:hover, #add-book-button:hover {
+        #add-book-button:hover {
             background-color: rgba(115, 247, 115, 1);
         }
 
-
-    dialog {
-        border: none;
-        border-radius: 10px;
-    }
-    
+dialog {
+    border: none;
+    border-radius: 10px;
+}
     dialog::backdrop {
         background-color: rgba(0, 0, 0, 0.25);
     }
-    
     #add-book-dialog {
         background-color: rgb(232, 232, 232);;
-        width: 300px;
+        width: 400px;
     }
-    
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-    
-    input[type="text"], input[type="number"] {
-        border: none;
-        border-radius: 10px;
-        height: 50px;
-        width: calc(100% - 25px);
-        padding-left: 10px;
-        font-size: larger;
-    }
-    
-    label {
-        font-size: 20px;
-    }
-    
-    
-    .read {
-        display: flex;
-        align-items: center;
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        input[type="text"], input[type="number"] {
+            border: none;
+            border-radius: 10px;
+            height: 50px;
+            width: calc(100% - 25px);
+            padding-left: 10px;
+            font-size: larger;
+        }
+            label {
+                font-size: 20px;
+            }
+        .read {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            align-items: center;
+        }
+            .readPosition {
+                grid-column: 2/4;
+            }
+            .addButtonPosition {
+                grid-column: 4/5;
+            }
+        
+        input[type="checkbox"] {
+            border: none;
+            width: 20px;
+            height: 20px;
+        }
 
-    }
-    
-    input[type="checkbox"] {
-        border: none;
-        width: 20px;
-        height: 20px;
-    }
-    
-    #add-book-button {
-        border: none;
-        border-radius: 10px;
-        width: calc(100% - 25px);
-        height: 50px;
-        font-size: 20px;
-    }
-    
-    #close-dialog-button {
-        position: absolute;
-        top: 5px;
-        left: 5px;
-    }
-    
+        .closeCard {
+            display: flex;
+            gap: 200px;
+            align-items: center;
+        }
     #close-dialog-button:hover {
         cursor: pointer;
         opacity: 0.50;
@@ -259,5 +248,3 @@
             align-items: center;
             gap: 40px;
         }
-
-/*---------------------------------*/
